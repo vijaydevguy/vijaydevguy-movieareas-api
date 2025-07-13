@@ -1,27 +1,33 @@
 import express from "express";
 
+import {
+  movieCreate,
+  movieDelete,
+  movieIndex,
+  movieUpdate,
+} from "../controllers/movies.controller.js";
+
 const router = express.Router();
 
 //R - for reading
 //instead of app we are gonna use router
-router.get("/", (req, res) => {
-  console.log("getiing is working");
-  res.send("show movie details");
-});
+
+//this logic goes inside controller accoring mvc pattern
+
+// router.get("/", (req, res) => {
+//   console.log("getiing is working");
+//   res.send("show movie details");
+// });
+
+router.get("/", movieIndex);
 
 //C - for create
-router.post("/", (req, res) => {
-  res.send("create movies ");
-});
+router.post("/", movieCreate);
 
 //U - for update
-router.put("/:id", (req, res) => {
-  res.send("update movie details");
-});
+router.put("/:id", movieUpdate);
 
 //D - for delete
-router.delete("/", (req, res) => {
-  res.send("delete movie");
-});
+router.delete("/", movieDelete);
 
 export default router;
