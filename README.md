@@ -18,4 +18,4 @@ This project provides a backend API for a React.js movie application.
 ## API Endpoint
 
 The backend API is available at:  
-`https://movie-amzf.onrender.com/`
+[https://movie-amzf.onrender.com/](https://movie-amzf.onrender.com/)
