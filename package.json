@@ -4,7 +4,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon main.js"
+    "server": "nodemon main.js",
+    "build": "echo \"No build step needed\""
   },
   "keywords": [],
   "author": "",
