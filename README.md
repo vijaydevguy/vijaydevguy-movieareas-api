@@ -1,18 +1,21 @@
 ## movieareas-api
+This project provides a backend API for a React.js movie application.
 
-Provides a movie api for react js app
+## Important Commands
 
-##important commands
+1. `npm install` &mdash; Install dependencies
+2. `npm run server` &mdash; Start the development server
+3. `git init` &mdash; Initialize a new Git repository
+4. `git add .` &mdash; Stage all changes
+5. `git commit -m "your commit message"` &mdash; Commit changes
+6. `git push -u origin main` &mdash; Push to the main branch
 
-1. `npm install`
-2. `npm run server`
-3. `git init`
-4. `git add .`
-5. `git commit -m "your commit name"`
-6. `git push -u origin main`
+## Database Options
 
+- **SQL:** MySQL, MariaDB, PostgreSQL
+- **NoSQL:** MongoDB (connected via MongoDB Atlas)
 
-### Database options
-1. SQL - (MySql, MariaDB, PostgreSQL)
-2. NoSQL - (MongoDB)
-    we will connect mongoDB using atlas
+## API Endpoint
+
+The backend API is available at:  
+`https://movie-amzf.onrender.com/`
