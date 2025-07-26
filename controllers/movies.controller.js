@@ -89,6 +89,16 @@ export const movieUpdate = async (req, res) => {
   // }
 };
 
-export const movieDelete = (req, res) => {
+export const movieDelete = async(req, res) => {
+
+  const movieId = req.params.id;
+
+  try {
+    await Movie.deleteOne({_id: movieId});
+    res.json({message:'Movie Deleted! '})
+  } catch (error) {
+    res.status(500).json({message:error.message})
+  }
+
   res.send("delete movie");
 };
